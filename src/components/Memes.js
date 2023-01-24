@@ -16,5 +16,22 @@ function Memes() {
         .then(res => res.json())
         .then(data => setALlMemes(data.data.memes))
     }, [])
+
+
+    function getMemeImage(){
+        const randomNumber = Math.floor(Math.random() * allMemes.length)
+        const url = allMemes[randomNumber].url
+
+        //to save the random url in state
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            randomImage : url
+        }))
+
+
+    }
+
+
+    
 }
 export default Memes
