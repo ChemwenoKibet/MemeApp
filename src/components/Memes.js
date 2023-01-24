@@ -9,12 +9,12 @@ function Memes() {
         randomImage: "https://i.imgflip.com/1g8my4.jpg"
     }, []
     )
-    const[allMemes, setALlMemes] = useState([])
+    const[allMemes, setAllMemes] = useState([])
 
     useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
         .then(res => res.json())
-        .then(data => setALlMemes(data.data.memes))
+        .then(data => setAllMemes(data.data.memes))
     }, [])
 
 
@@ -31,7 +31,44 @@ function Memes() {
 
     }
 
+    function handleChange(event){
+        const{name,value} = event.target
+       setMeme(prevMeme => {
+        return{...prevMeme,
+        [name]: value
+        }
+        
+       })
 
-    
+    }
+
+    // return(   
+    //     <main>
+    //     <div className="form">
+    //         <input 
+    //         type="text"
+    //         className="form--inputs" 
+    //         placeholder="Top text"
+    //         name="topText"
+    //         value={meme.topText}
+    //         onChange = {handleChange}
+
+    //         />
+
+    //         <button className="form--button"
+    //         onClick={getMemeImage}>
+    //         Get a new meme  🖼
+    //         </button>
+    //     </div>
+
+    //     <div className="meme">
+    //     <pre>{JSON.stringify(setAllMemes,null,2)}</pre>
+    //     <img src={meme.randomImage} alt="meme-random" className="meme--image"/>
+    //     <h3 className="top--text">{meme.topText}</h3>
+    //     <h3 className="bottom--text">{meme.bottomText}</h3>
+    //     </div>
+       
+    //     </main>
+    // )
 }
 export default Memes
