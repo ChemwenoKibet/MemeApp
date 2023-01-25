@@ -1,173 +1,166 @@
-.animate-charcter
-{
-   text-transform: none;
-  background-image: linear-gradient(
-    -225deg,
-    #fde50b 0%,
-    #4a9c06 29%,
-    #af345df1 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 100px;
-      margin-top: 20px;
-}
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
 
 
+body{
+
+  display:inline-block;
+  background-image: url('https://cdn.pixabay.com/photo/2020/02/09/09/48/smiley-4832529_960_720.png');
+  background-size: cover;
+
+}
+.h1{
+  display:inline-flex;
+}
+
+.meme {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif
+}
 
 body {
-    animation: changeBg 5s infinite alternate linear;
-}
-@keyframes changeBg{
-    0% {
-        background: black;
-    }
-    25% {
-        background: #60d394e8;
-    }
-    50% {
-        background: yellowgreen;
-    }
-    75% {
-        background: rgb(230, 154, 13);
-    }
-    100% {
-        background: #120835;
-    }
-}
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
   margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size:20px;
+  font-weight: 200;
 }
 
-label {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+.m-5-auto {
+  margin: 5rem auto
+}
+
+.primary-button {
+  margin-top: 5rem;
+  margin-right: 1rem;
+  padding: .6rem;
+  width: 10rem;
+  background: #222;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all .5s;
+  cursor: pointer;
+  text-transform: capitalize
+}
+
+/***    Landing Page     ***/
+.main-title,
+.main-para {
+  color: #f1f1f1
+}
+
+.main-title {
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: black;
+}
+
+.main-para {
+  font-size: large;
+  text-Transform: capitalize;
+  color: #333;
+}
+
+#reg_btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#reg_btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#reg_btn:hover span {
+padding-right: 25px;
+}
+
+#reg_btn:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+/***    Login Page     ***/
+h2 {
+  font-weight: 300
+}
+
+form {
+  display: inline-block;
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 2rem;
+  margin: 2rem 0 1rem 0
+}
+
+form label {
+  float: left;
+  font-size: .9rem;
+  margin: 0;
+  padding: 0
+}
+
+.right-label {
+  float: right;
+  cursor: pointer
 }
 
 input {
-  padding: 10px;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-}
-
-button[type='submit'] {
-  padding: 1px 20px;
-  background-color: #4CAF50;
-  color: white;
+  width: 15rem;
+  padding: .3rem;
   border-radius: 5px;
-  border: none;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin-bottom: 10px;
-  border-radius: 20px;
+  outline: none;
+  border: none
 }
 
-button[type='submit']:hover {
-  background-color: #3e8e41;
-}
-
-body {
-  margin: 0;
-  text-align: center;
-  font-family: sans-serif;
-  color: #fefefe;
-}
-.holder {
-  position: relative;
-  width: 320px;
-  margin: 100px auto 0 auto;
-  perspective: 1000px;
-}
-.carousel {
-  position: absolute;
+#sub_btn {
+  display: block;
   width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  animation: rotate360 60s infinite forwards linear;
-}
-.image {
-  position: absolute;
-  width: 300px;
-  height: 187px;
-  top: 20px;
-  left: 10px;
-  right: 10px;
-  background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-  display: flex;
-}
-span {
-  margin: auto;
-  font-size: 2rem;
-}
-@keyframes rotate360 {
-  from {
-      transform: rotateY(0deg);
-  }
-  to {
-      transform: rotateY(-360deg);
-  }
-}
-.image:nth-child(1) {
-  background-image: url("Images/code.webp");
-  transform: rotateY( 0deg) translateZ(430px);
+  padding: .3rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  border-radius: 3px;
 }
 
-.image:nth-child(2) {
-  background-image: url("Images/code.webp");
-  transform: rotateY( 40deg) translateZ(430px);
+#sub_btn:hover {
+  background: #333;
+  transition: all .5s
 }
 
-.image:nth-child(3) {
-  background-image: url("Images/code.webp");
-  transform: rotateY( 80deg) translateZ(430px);
+footer p {
+  margin: 0;
+  font-size: .9rem
 }
 
-.image:nth-child(4) {
-  background-image: url("Images/code.webp");
-  transform: rotateY( 120deg) translateZ(430px);
+/***    Register Page     ***/
+#checkbox {
+  width: 1rem
 }
 
-.image:nth-child(5) {
-  background-image: url("Images/code.webp");
-  transform: rotateY( 160deg) translateZ(430px);
+form span {
+  font-size: .8rem
 }
 
-.image:nth-child(6) {
-  background-image: url("Images/code.webp");
-  transform: rotateY( 200deg) translateZ(430px);
+#reset_pass_lbl {
+  float: left
 }
 
-.image:nth-child(7) {
-  background-image: url("Images/game.jpg");
-  transform: rotateY( 240deg) translateZ(430px);
-}
-
-.image:nth-child(8) {
-  background-image: url("Images/game1.jpg");
-  transform: rotateY( 280deg) translateZ(430px);
-}
-
-.image:nth-child(9) {
-  background-image: url("Images/game3.jpg");
-  transform: rotateY( 320deg) translateZ(430px);
+/***    Home Page     ***/
+.home-page-title {
+  color: #222
 }
