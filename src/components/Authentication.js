@@ -44,12 +44,20 @@ function Authentication() {
         localStorage.setItem('data', JSON.stringify(data));
         document.getElementById("message").innerHTML = "Registration successful";
       };
+
+
+        const handleLogout = () => {
+          setIsLoggedIn(false);
+          setUserData({});
+        };
+      
     
     if (isLoggedIn) {
         return (
             <div>
-            <h2>Welcome, {userData.username}</h2>
-            <h3>Home Page</h3>
+            <h1>Welcome, {userData.username}</h1>
+            <h2>Home Page</h2>
+            <button onClick={handleLogout}>Logout</button>
             </div>
         );
     } else {
@@ -60,7 +68,7 @@ function Authentication() {
                 <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
                    Sign Up
                 </h1>
-                <form className="mt-6" onSubmit={handleRegistration}>
+                <form className="mt-6" onSubmit={handleLogin}>
                     <div className="mb-2">
                         <label
                             for="email"
