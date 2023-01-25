@@ -1,5 +1,7 @@
 import React from "react";
 import "../index.css";
+import LoginForm from "./Login";
+import SignUpForm from "./Sign";
 function Home(){
     return (
         <div>
@@ -11,7 +13,10 @@ function Home(){
             </div>
           </div>
 
-          
+          <>
+          <LoginForm />
+          <SignUpForm />
+          </>
 
 
 
