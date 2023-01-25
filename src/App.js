@@ -1,4 +1,3 @@
-
 import './App.css';
 import Memes from './components/Memes';
 
