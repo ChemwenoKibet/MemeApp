@@ -16,7 +16,7 @@ function Memes() {
         .then(res => res.json())
         .then(data => setAllMemes(data.data.memes))
     }, [])
-
+        
 
     function getMemeImage(){
         const randomNumber = Math.floor(Math.random() * allMemes.length)
@@ -42,33 +42,33 @@ function Memes() {
 
     }
 
-    // return(   
-    //     <main>
-    //     <div className="form">
-    //         <input 
-    //         type="text"
-    //         className="form--inputs" 
-    //         placeholder="Top text"
-    //         name="topText"
-    //         value={meme.topText}
-    //         onChange = {handleChange}
+    return(   
+        <main>
+        <div className="form">
+            <input 
+            type="text"
+            className="form--inputs" 
+            placeholder="Top text"
+            name="topText"
+            value={meme.topText}
+            onChange = {handleChange}
 
-    //         />
+            />
 
-    //         <button className="form--button"
-    //         onClick={getMemeImage}>
-    //         Get a new meme  🖼
-    //         </button>
-    //     </div>
+            <button className="form--button"
+            onClick={getMemeImage}>
+            Get a new meme  🖼
+            </button>
+        </div>
 
-    //     <div className="meme">
-    //     <pre>{JSON.stringify(setAllMemes,null,2)}</pre>
-    //     <img src={meme.randomImage} alt="meme-random" className="meme--image"/>
-    //     <h3 className="top--text">{meme.topText}</h3>
-    //     <h3 className="bottom--text">{meme.bottomText}</h3>
-    //     </div>
+        <div className="meme">
+        <pre>{JSON.stringify(setAllMemes,null,2)}</pre>
+        <img src={meme.randomImage} alt="meme-random" className="meme--image"/>
+        <h3 className="top--text">{meme.topText}</h3>
+        <h3 className="bottom--text">{meme.bottomText}</h3>
+        </div>
        
-    //     </main>
-    // )
+        </main>
+    )
 }
 export default Memes;
