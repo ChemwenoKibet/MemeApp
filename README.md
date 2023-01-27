@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+# Phase-2 Group Project  (Group 6) 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Introduction
+This is a meme generator site designed for quick, fast and easy access to memes. It is designed to be minimal and easy to use while having very low overhead to maximise responsiveness.
+This is the phase 2 group project for the team comprising of the following members:
+
+-Ian Chemweno (Scrum Master)
+-Joy Kirui
+-Renny Murage
+-Ernest Cheruiyot
+
+## Minimum Viable Product
+The following requirements MUST be delivered in order to consider your submission as complete:
+NB: Consume the following API to get data to be used. . https://imgflip.com/api
+
+1. Home Page - When a user first opens the application, they should be greeted with a page that has information about what the application aims to do.
+2. Users should be able to get all memes in a random orders.
+3. Users should be able to view more detailed information about the meme selected from the listing above.
+4. Add an authentication page (Login / Registration) - Persist data in an array.
+
+## Extra Deliverables
+- Provide a logout functionality
+
+
+### Deployment Link
+https://meme-app-omega.vercel.app/
+
+
 
 ## Available Scripts
 
@@ -13,11 +40,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -53,18 +75,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/c
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
