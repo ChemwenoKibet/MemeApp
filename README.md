@@ -51,7 +51,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 
 
-MIT License
+##MIT License
 
 Copyright (c) 2023 Chemweno Kibet and others
 
