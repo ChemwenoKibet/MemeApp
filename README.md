@@ -12,7 +12,7 @@ This is the phase 2 group project for the team comprising of the following membe
 -Ernest Cheruiyot
 
 ## Minimum Viable Product
-The following requirements MUST be delivered in order to consider your submission as complete:
+The following requirements are delivered in order to consider your submission as complete:
 NB: Consume the following API to get data to be used. . https://imgflip.com/api
 
 1. Home Page - When a user first opens the application, they should be greeted with a page that has information about what the application aims to do.
