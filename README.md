@@ -1,4 +1,4 @@
-# Phase-2 Group Project  (Group 6) 
+# Meme Generator App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
